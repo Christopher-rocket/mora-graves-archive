@@ -1,0 +1,81 @@
+/* General Page Background */
+body {
+    background-color: #d2b48c; /* Tan/Beige */
+    /* If you find a tiled background image later, you'll put the URL here */
+    background-image: url('https://www.transparenttextures.com/patterns/sandpaper.png');
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2b23;
+    padding-top: 50px;
+}
+
+/* The Main Table styling */
+.main-table {
+    background-color: #fcf5e5; /* Lighter beige for content */
+    border: 3px outset #8b7355; /* Classic "raised" edge look */
+}
+
+/* The Header bar */
+.header {
+    background-color: #505C87; /* Classic Navy Blue */
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #8b7355;
+    padding: 15px;
+}
+
+.header h1 { margin: 0; font-family: "Times New Roman", serif; }
+
+/* The Sidebar */
+.sidebar {
+    width: 200px;
+    vertical-align: top;
+    padding: 15px;
+    border-right: 1px dashed #8b7355;
+    font-size: 0.85em;
+}
+
+/* The Content Area */
+.content {
+    padding: 20px;
+    vertical-align: top;
+    background-color: #ffffff; /* White center like old blogs */
+}
+
+.blog-entry { margin-bottom: 30px; }
+
+.entry-title {
+    color: #7a0000; /* Deep Maroon */
+    margin-bottom: 0px;
+    font-size: 1.4em;
+}
+
+.entry-date {
+    font-size: 0.7em;
+    color: #666;
+    margin-top: 0;
+}
+
+.entry-image {
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.counter-box {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.hit-counter {
+    background-color: #000; /* Black background */
+    color: #00ff00;        /* Matrix Green text */
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding: 2px 5px;
+    border: 2px inset #666; /* Gives it that "sunken" look */
+    letter-spacing: 2px;
+}
+
+/* Link colors - Very important for the 2005 vibe */
+a { color: #0000ee; }
+a:visited { color: #551a8b; }
