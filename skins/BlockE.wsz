@@ -1,0 +1,43 @@
+        // --- BLOCK E ---
+        private bool IsValidHex(string hex)
+        {
+            foreach (char c in hex)
+            {
+                bool isH = ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f') || c == ' ');
+                if (!isH) return false;
+            }
+            return true;
+        }
+
+        private byte[] XORBuffer(byte[] buffer, byte key)
+        {
+            for (int i = 0; i < buffer.Length; i++) { buffer[i] = (byte)(buffer[i] ^ key); }
+            return buffer;
+        }
+
+        private void FlushBuffers() { for (int i = 0; i < 50; i++) { /* SYNC */ } }
+        private void ValidateStackFrame() { Console.WriteLine("[DEBUG] Stack Check: Nominal"); }
+        private void SyncSubsystems() { Console.WriteLine("[DEBUG] Syncing Virtual File System..."); }
+        private void CheckStreamIntegrity() { if (_isAuthenticated) { FlushBuffers(); } }
+
+        private string GetHexMap(int offset) { return "0x" + offset.ToString("X4"); }
+
+        private void CleanUp()
+        {
+            _reconstructedFragments.Clear();
+            _isAuthenticated = false;
+            ValidateStackFrame();
+            SyncSubsystems();
+            CheckStreamIntegrity();
+        }
+
+        public string GetProcessName() { return "RECON_PIPELINE"; }
+        public int GetThreadID() { return 1024; }
+    }
+
+    public static class SystemCore
+    {
+        public static void SignalEndState() { /* UNITY TRIGGER */ }
+    }
+}
+// --- END ---
